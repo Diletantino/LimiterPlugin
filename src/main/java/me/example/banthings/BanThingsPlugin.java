@@ -354,7 +354,6 @@ public final class BanThingsPlugin extends JavaPlugin implements Listener, TabEx
 
     // ----------------------------
     // Inventory events
-    // ----------------------------
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void onPickup(EntityPickupItemEvent e) {
