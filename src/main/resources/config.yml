@@ -1,0 +1,20 @@
+# Списки/настройки
+banned-items: []
+item-limits: {}
+banned-effects: []
+
+# Уведомления игроку, когда предмет удалён/лимит превышен/эффект очищен
+# modes: OFF, CHAT, ACTIONBAR, BOTH
+notify-mode: CHAT
+
+messages:
+  removed-banned-item: "&c[BanThings] &fЗапрещённый предмет удалён: &e%item% &7x%amount%"
+  removed-limited-item: "&6[BanThings] &fПревышен лимит предмета: &e%item% &7(лимит %limit%). Удалено: x%amount%"
+  cleared-effects: "&c[BanThings] &fЗапрещённый эффект получен (&e%effect%&f). Все эффекты очищены."
+
+# Сообщения команд
+command:
+  list-empty: "&7(пусто)"
+  list-header-banned: "&eЗабаненные предметы:&f"
+  list-header-limits: "&eЛимиты предметов:&f"
+  list-header-effects: "&eЗабаненные эффекты:&f"

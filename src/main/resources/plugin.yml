@@ -1,0 +1,49 @@
+name: BanThings
+version: 1.1.0
+main: me.example.banthings.BanThingsPlugin
+api-version: "1.21"
+author: you
+
+commands:
+  banitem:
+    usage: /banitem <minecraft:item_id>
+    description: Ban item so it gets deleted from inventories
+    permission: banthings.admin
+  unbanitem:
+    usage: /unbanitem <minecraft:item_id>
+    description: Unban item
+    permission: banthings.admin
+  banlist:
+    usage: /banlist
+    description: List banned items
+    permission: banthings.admin
+
+  limititem:
+    usage: /limititem <minecraft:item_id> <limit>
+    description: Set max allowed amount of an item in inventory
+    permission: banthings.admin
+  unlimititem:
+    usage: /unlimititem <minecraft:item_id>
+    description: Remove item limit
+    permission: banthings.admin
+  limitlist:
+    usage: /limitlist
+    description: List item limits
+    permission: banthings.admin
+
+  baneffect:
+    usage: /baneffect <minecraft:effect_id>
+    description: If player gets this effect, clear all effects
+    permission: banthings.admin
+  unbaneffect:
+    usage: /unbaneffect <minecraft:effect_id>
+    description: Unban effect
+    permission: banthings.admin
+  effectlist:
+    usage: /effectlist
+    description: List banned effects
+    permission: banthings.admin
+
+permissions:
+  banthings.admin:
+    default: op
